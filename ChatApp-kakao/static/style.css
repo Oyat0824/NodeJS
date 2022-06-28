@@ -1,0 +1,161 @@
+/* 구글 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+
+/* 노멀라이징 */
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+
+/* 스타일 */
+html {
+    height: 100vh;
+    background-color: rgb(189, 176, 176);
+}
+
+#chat-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#chat-box > h1 {
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+}
+
+#chat-box > #chat {
+    margin: 0 auto;
+    width: 450px;
+    border: 1px solid #000;
+}
+
+#chat-box > #chat > #chat-btn {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255);
+}
+
+#chat-box > #chat > #chat-btn > p {
+    position: absolute;
+    left: 15px;
+}
+
+#chat-box > #chat > #chat-btn > span {
+    position: absolute;
+    right: 15px;
+}
+
+#chat-box > #chat > #chat-line {
+    width: 100%;
+    height: 650px;
+    padding: 20px;
+    border-bottom: none;
+    color: rgb(0, 0, 0);
+    background-color: #6884b3;
+    overflow-y: scroll;
+}
+
+#chat-box > #chat > #chat-line::-webkit-scrollbar {
+    width: 5px;
+}
+
+#chat-box > #chat > #chat-line::-webkit-scrollbar-thumb {
+    background-color: rgba(31, 146, 159, 0.696);
+}
+
+#chat-box > #chat > #chat-line::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#chat-box > #chat > #chat-line > .chatbox {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+#chat-box > #chat > #chat-line > .chatbox.my {
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+#chat-box > #chat > #chat-line > .chatbox span {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#chat-box > #chat > #chat-line > .chatbox div {
+    position: relative;
+    display: inline-block;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 16px;
+}
+
+#chat-box > #chat > #chat-line > .chatbox.my div {
+    background-color: #fdf01b;
+}
+
+#chat-box > #chat > #chat-input {
+    width: 100%;
+}
+
+#chat-box > #chat > #chat-input > form {
+    height: 30px;
+}
+
+#chat-box > #chat > #chat-input > form > input {
+    width: 80%;
+    line-height: 30px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+#chat-box > #chat > #chat-input > form > button {
+    width: 12%;
+    line-height: 30px;
+    background-color: #ddd;
+    border: none;
+    outline: none;
+}
+
+#chat-box > #chat > #chat-input > form > button:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+#chat-box > #chat > #chat-input > form > button#line {
+    width: 8%;
+    line-height: 30px;
+}
+
+#chat-box > #chat > #chat-input > form > button#line.on {
+    background-color: gold;
+}
+
+#chat-box > #chat > #chat-input > form > button#line.off {
+    background-color: rgb(161, 137, 0);
+}

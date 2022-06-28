@@ -1,0 +1,144 @@
+/* 폰트 적용 : 스타크래프트 2 폰트 */
+@font-face {
+    font-family: 'Kostar';
+    src: url('./Kostar.ttf') format('truetype');
+}
+
+/* 노멀라이징 */
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: "kostar";
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+
+/* 스타일 */
+html {
+    height: 100vh;
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+#chat-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#chat-box > h1 {
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+}
+
+#chat-box > #chat {
+    margin: 0 auto;
+    width: 900px;
+}
+
+#chat-box > #chat > #chat-btn {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid greenyellow;
+    border-bottom: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 -1px 10px #0fa;
+}
+
+#chat-box > #chat > #chat-btn > p {
+    position: absolute;
+    left: 15px;
+}
+
+#chat-box > #chat > #chat-btn > span {
+    position: absolute;
+    right: 15px;
+}
+
+#chat-box > #chat > #chat-line {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid greenyellow;
+    border-bottom: none;
+    color: rgb(105, 255, 115);
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px #0fa;
+    overflow-y: scroll;
+}
+
+#chat-box > #chat > #chat-line::-webkit-scrollbar {
+    width: 10px;
+}
+
+#chat-box > #chat > #chat-line::-webkit-scrollbar-thumb {
+    background-color: rgba(108, 159, 31, 0.696);
+}
+
+#chat-box > #chat > #chat-line::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#chat-box > #chat > #chat-line li {
+    padding: 2px 0;
+    font-size: 16px;
+}
+
+#chat-box > #chat > #chat-input {
+    width: 100%;
+    box-shadow: 0 0 10px #0fa;
+}
+
+#chat-box > #chat > #chat-input > form {
+    height: 30px;
+}
+
+#chat-box > #chat > #chat-input > form > input {
+    width: 85%;
+    line-height: 30px;
+    padding-left: 15px;
+    border: 1px solid greenyellow;
+    outline: none;
+    font-size: 14px;
+    box-shadow: 0 0 4px #0fa;
+}
+
+#chat-box > #chat > #chat-input > form > button {
+    width: 10%;
+    line-height: 30px;
+    background-color: #ddd;
+    border: 1px solid greenyellow;
+    border-left: none;
+    outline: none;
+    box-shadow: 0 0 4px #0fa;
+}
+
+#chat-box > #chat > #chat-input > form > button:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+#chat-box > #chat > #chat-input > form > button.line {
+    width: 5%;
+    line-height: 30px;
+}
+
+#chat-box > #chat > #chat-input > form > button.line.on {
+    background-color: gold;
+}
+
+#chat-box > #chat > #chat-input > form > button.line.off {
+    background-color: rgb(142, 155, 0);
+}
+

@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/static/style.css")
+        title 미니 프로젝트 :: 웹 소켓 기반 채팅 앱
+    body 
+        div#chat-box
+            h1 웹 소켓 기반 채팅
+            div#chat
+                div#chat-btn 
+                    p 채팅 앱 v0.1 
+                    span ⎯⠀❐⠀⤬
+                div#chat-line
+                    ul
+                div#chat-input
+                    form
+                        input(type="text", placeholder="MESSAGE...", required)
+                        button.line.on(type="button" title="채팅창 자동 스크롤 켜기/끄기") ON
+                        button SEND
+            
+
+        script(src="/static/script.js") 
